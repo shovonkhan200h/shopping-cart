@@ -11,51 +11,51 @@
 <body>
 
 <div class="container">
-<div class="row">
+<div class="row p-5 bg-light m-2">
     <div class="col-md-6 d-flex justify-content-center align-items-center">
         <img src="/img/images.jpg" width="75px">
         <h6>iphone 11 128GB Black</h6>    
     </div>
 
     <div class="col-md-6 justify-content-between align-items-center d-flex text-center">
-            <button id="minusBtn">-</button>
-            <h5><span id="count">0</span></h5>
-            <button id="plusBtn">+</button>
-            <p>$ <span id="price" class="hello">0</span></p>
+            <button onclick="changeCount(`phone`,false)">-</button>
+            <h5><span id="phone-count">1</span></h5>
+            <button onclick="changeCount(`phone`,true)">+</button>
+            <p>$<span id="phone-total">1219</span></p>
             <button>Delete</button>
     </div>
 </div>
 
-<div class="row">
+<div class="row p-5 bg-light m-2">
     <div class="col-md-6 d-flex justify-content-center align-items-center">
         <img src="/img/images.jpg" width="75px">
-        <h6>iphone 11 128GB Black</h6>    
+        <h6>iphone 11 128GB Case</h6>    
     </div>
 
     <div class="col-md-6 justify-content-between align-items-center d-flex text-center">
-            <button id="minusBtn">-</button>
-            <h5><span id="count">0</span></h5>
-            <button id="plusBtn">+</button>
-            <p>$ <span id="price" class="hello">0</span></p>
+            <button onclick="changeCount(`case`,false)">-</button>
+            <h5><span id="case-count">1</span></h5>
+            <button onclick="changeCount(`case`,true)">+</button>
+            <p>$<span id="case-total">59</span></p>
             <button>Delete</button>
     </div>
 </div>
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row bg-light p-5 m-2">
+        <div class="col-md-6 justify-content-between align-items-center d-flex text-center flex-column">
             <h6>Subtotal</h6>
             <h6>Tax</h6>
             <h6>Total</h6>
         </div>
-        <div class="col-md-6">
-            <h6>: $<span id="subTotal">0</span></h6>
+        <div class="col-md-6 justify-content-between align-items-center d-flex text-center flex-column">
+            <h6>: $<span id="subTotal">1278</span></h6>
             <h6>: 0</h6>
-            <h6>: $ <span id="total">0</span></h6>
-        </div>
+            <h6>: $ <span id="total">1278</span></h6>
+        </div>   
     </div>
-    <button>CheckOut</button>
+    <button class="btn btn-success w-25">CheckOut</button>
 </div>
 
 
@@ -77,6 +77,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="index2.js"></script>
 </body>
 </html>
