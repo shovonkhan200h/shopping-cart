@@ -6,6 +6,7 @@ const add=()=>{
     })
     
 }
+add()
 
 const miuns=()=>{
         let minusButton= document.getElementById(`minusBtn`);
@@ -14,8 +15,10 @@ const miuns=()=>{
         const result= document.getElementById(`count`).innerText = valueNumber - 1;
         updatePrice(`price`,result);
         })
-        
+
 }
+miuns()
+
 
 const updatePrice = (id,result)=>{
     const price= document.getElementById(id).innerText;
@@ -31,5 +34,4 @@ const setSpan = (id)=>{
     return valueNumber; 
 };
 
-add()
-miuns()
+
