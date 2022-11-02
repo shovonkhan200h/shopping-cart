@@ -3,6 +3,8 @@ const add=()=>{
         const valueNumber =setSpan(`count`)
         const result= document.getElementById(`count`).innerText = valueNumber + 1;
         updatePrice(`price`,result);
+        updatePrice(`subTotal`,result);
+        updatePrice(`total`,result);
     })
     
 }
@@ -14,6 +16,8 @@ const miuns=()=>{
         const valueNumber =setSpan(`count`)
         const result= document.getElementById(`count`).innerText = valueNumber - 1;
         updatePrice(`price`,result);
+        updatePrice(`subTotal`,result);
+        updatePrice(`total`,result);
         })
 
 }
@@ -33,6 +37,8 @@ const setSpan = (id)=>{
     const valueNumber= +value;
     return valueNumber; 
 };
+
+
 
 
 
