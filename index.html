@@ -7,55 +7,51 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="container">
-<div class="row p-5 bg-light m-2">
+<div class="row bg-light p-5 mt-5">
+    <!--!!-->
     <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <img src="/img/images.jpg" width="75px">
-        <h6>iphone 11 128GB Black</h6>    
+        <div class=""><img src="img/iphone11.jpg" width="75px"></div>
+        <div class=""><h5>Iphone 11 128GB</h5></div>
     </div>
-
-    <div class="col-md-6 justify-content-between align-items-center d-flex text-center">
-            <button onclick="changeCount(`phone`,false)">-</button>
-            <h5><span id="phone-count">1</span></h5>
-            <button onclick="changeCount(`phone`,true)">+</button>
-            <p>$<span id="phone-total">1219</span></p>
-            <button>Delete</button>
-    </div>
-</div>
-
-<div class="row p-5 bg-light m-2">
-    <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <img src="/img/images.jpg" width="75px">
-        <h6>iphone 11 128GB Case</h6>    
-    </div>
-
-    <div class="col-md-6 justify-content-between align-items-center d-flex text-center">
-            <button onclick="changeCount(`case`,false)">-</button>
-            <h5><span id="case-count">1</span></h5>
-            <button onclick="changeCount(`case`,true)">+</button>
-            <p>$<span id="case-total">59</span></p>
-            <button>Delete</button>
-    </div>
-</div>
-</div>
-
-<div class="container">
-    <div class="row bg-light p-5 m-2">
-        <div class="col-md-6 justify-content-between align-items-center d-flex text-center flex-column">
-            <h6>Subtotal</h6>
-            <h6>Tax</h6>
-            <h6>Total</h6>
+    <!--!!-->
+    <div class="col-md-6 justify-content-evenly align-items-center d-flex">
+        <div class="d-flex justify-content-center align-items-center">
+            <button>-</button>
+            <h5 class="p-3 ">0</h5>
+            <button>+</button>
         </div>
-        <div class="col-md-6 justify-content-between align-items-center d-flex text-center flex-column">
-            <h6>: $<span id="subTotal">1278</span></h6>
-            <h6>: 0</h6>
-            <h6>: $ <span id="total">1278</span></h6>
-        </div>   
+        <div class="d-flex justify-content-center align-items-center">
+            <h5 class="p-3">$<span>1219</span></h5>
+            <button>Delete</button>
+        </div>
     </div>
-    <button class="btn btn-success w-25">CheckOut</button>
+</div>
+
+<div class="row bg-light p-5 mt-5">
+    <!--!!-->
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class=""><img src="img/iphone11.jpg" width="75px"></div>
+        <div class=""><h5>Iphone 11 128GB</h5></div>
+    </div>
+    <!--!!-->
+    <div class="col-md-6 justify-content-evenly align-items-center d-flex">
+        <div class="d-flex justify-content-center align-items-center">
+            <button>-</button>
+            <h5 class="p-3 ">0</h5>
+            <button>+</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h5 class="p-3">$<span>1219</span></h5>
+            <button>Delete</button>
+        </div>
+    </div>
+</div>
+
+
 </div>
 
 
@@ -65,18 +61,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="index2.js"></script>
 </body>
 </html>
