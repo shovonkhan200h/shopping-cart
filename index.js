@@ -5,7 +5,7 @@ const productChange=(product,isUp)=>{
         let newProduct = productNumber;
         if(isUp==true){
             newProduct = productNumber + 1;
-        }if(isUp==false){
+        }if(isUp==false && productNumber>0){
             newProduct = productNumber - 1;
         }
         productInput.innerText = newProduct;
