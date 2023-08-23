@@ -52,7 +52,7 @@ const convertToInt=(product)=>{
 // }
 
 // increase()
-
+fuck you
 
 // const decrease=()=>{
 //     document.getElementById(`phone-decrease`).addEventListener(`click`,()=>{
